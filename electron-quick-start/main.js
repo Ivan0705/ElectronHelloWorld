@@ -1,4 +1,3 @@
-// Modules to control application life and create native browser window
 const path = require('path');
 const url = require('url');
 const {app, BrowserWindow} = require('electron');
@@ -24,10 +23,7 @@ function createWindow() {
 
     mainWindow.on('closed', () => {
         mainWindow = null;
-
     })
-
-
 }
 
 app.on('ready', createWindow);
